@@ -1,0 +1,3 @@
+[submodule "eac-cpf/v2/eac1-to-eac2-conversion"]
+	path = eac-cpf/v2/eac1-to-eac2-conversion
+	url = https://github.com/SAA-SDT/eac1-to-eac2-conversion.git
