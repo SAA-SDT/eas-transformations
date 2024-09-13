@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead xmlns="https://archivists.org/ns/ead/v4"
+     xmlns:migration="https://archivists.org/ns/ead4/migration"
+     xmlns:xhtml="http://www.w3.org/1999/xhtml"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="https://archivists.org/ns/ead/v4 https://raw.githubusercontent.com/SAA-SDT/eas-schemas/development/xml-schemas/ead/ead-4-dev.xsd"
+     audience="external">
+	<!-- EAD3 required element -->
+   <control maintenanceStatus="revised"
+            countryEncoding="iso3166-1"
+            dateEncoding="iso8601"
+            languageEncoding="iso639-2"
+            repositoryEncoding="iso15511"
+            scriptEncoding="iso15924">
+      <recordId>1.1</recordId>
+      <maintenanceAgency countryCode="US">
+			<!-- EAD3 required element -->
+         <agencyCode>NPkMC</agencyCode>
+         <agencyName>Marist College Archives &amp; Special Collections</agencyName>
+      </maintenanceAgency>
+      <maintenanceHistory>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent>
+               <agentName>TS-EAS EAD to EAD 4 Migration Style Sheet (ead-to-ead4.xsl)</agentName>
+               <agentType>machine</agentType>
+            </agent>
+            <eventDateTime standardDateTime="2024-08-12T16:43:31.681806-04:00">2024 August 12th</eventDateTime>
+            <eventDescription>EAD instance migrated to EAD 4 (https://archivists.org/ns/ead/v4)</eventDescription>
+         </maintenanceEvent>
+         <!-- EAD3 required element -->
+         <maintenanceEvent maintenanceEventType="created">
+            <agent>
+               <agentName>Monish Singh</agentName>
+               <agentType>human</agentType>
+            </agent>
+            <eventDateTime standardDateTime="2010-04">April 2010</eventDateTime>
+         </maintenanceEvent>
+         <maintenanceEvent maintenanceEventType="updated">
+            <agent>
+               <agentName>Monish Singh</agentName>
+               <agentType>human</agentType>
+            </agent>
+            <eventDateTime standardDateTime="2014-09-11">September 11, 2014</eventDateTime>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <languageDeclaration languageCode="eng" scriptCode="latn">
+         <descriptiveNote>
+            <p>Language: English</p>
+            <p>Script: Latin</p>
+         </descriptiveNote>
+      </languageDeclaration>
+   </control>
+   <findAidDesc href="http://library.marist.edu/archives/LTP/LTP.xml"
+                linkRole="EAD Source">
+      <title>
+         <part>Lowell Thomas Papers</part>
+      </title>
+      <agent>
+         <agentName>Marist College</agentName>
+         <agentRole>Publisher</agentRole>
+      </agent>
+      <place>
+         <address>
+            <addressLine>3399 North Road</addressLine>
+            <addressLine>Poughkeepsie, NY 12601</addressLine>
+         </address>
+      </place>
+      <date>April 2010</date>
+   </findAidDesc>
+   <archDesc>
+      <identificationData>
+         <unitTitle>Lowell Thomas Papers</unitTitle>
+         <unitId>MA-1</unitId>
+         <unitDateStructured unitDateType="inclusive">
+				<!-- Optional EAD3 element, added to comply with DACS requirement for 'Date Element' -->
+            <dateRange>
+               <fromDate standardDate="1789">1789</fromDate>
+               <toDate standardDate="1996">1996</toDate>
+            </dateRange>
+         </unitDateStructured>
+         <unitDateStructured unitDateType="bulk">
+            <dateRange>
+               <fromDate standardDate="1900">1900</fromDate>
+               <toDate standardDate="1981">1981</toDate>
+            </dateRange>
+         </unitDateStructured>
+         <physDescSet>
+				<!-- Optional EAD3 element, added to comply with DACS requirement for 'Extent Element' -->
+            <physDescStructured physDescStructuredType="carrier" coverage="whole">
+               <quantity>6</quantity>
+               <unitType>boxes</unitType>
+            </physDescStructured>
+            <physDescStructured physDescStructuredType="spaceoccupied" coverage="whole">
+               <quantity>6</quantity>
+               <unitType>cubic feet</unitType>
+            </physDescStructured>
+         </physDescSet>
+         <languageOfMaterial>
+				<!-- Optional EAD3 element, added to comply with DACS requirement for 'Language and Scripts of the Material Element' -->
+            <language languageCode="eng">English</language>
+         </languageOfMaterial>
+      </identificationData>
+      <agents>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Marist College, Archives &amp; Special Collections</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent>
+            <agentName>Yo, family</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent>
+            <agentName>Yo, name!</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Howdy, person 1, person part 2</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Marist College, Archives &amp; Special Collections</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent>
+            <agentName>Yo, family</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent>
+            <agentName>Yo, name!</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Howdy, person 1, person part 2</agentName>
+            <agentRole>Repository</agentRole>
+            <placeName>3399 North Road</placeName>
+            <placeName>Poughkeepsie, NY 12601</placeName>
+         </agent>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Thomas, Lowell, 1892-1981</agentName>
+            <agentRole>Person</agentRole>
+         </agent>
+         <agent>
+            <agentName>yo</agentName>
+            <agentRole>Person</agentRole>
+         </agent>
+         <agent><!--Multiple part elements have been combined into a single agentName-->
+            <agentName>Thomas, Lowell, 1892-1981</agentName>
+            <agentRole>Person</agentRole>
+         </agent>
+         <agent>
+            <agentName>yo</agentName>
+            <agentRole>Person</agentRole>
+         </agent>
+      </agents>
+      <accessConditions>
+			<!-- Optional EAD3 element, added to comply with DACS requirement for 'Conditions Governing Access Element' -->
+         <p>Items in this collection do not circulate and may be used in-house only.</p>
+      </accessConditions>
+      <useConditions>
+			<!-- Optional EAD3 element, added to comply with DACS requirement for 'Conditions Governing Access Element' -->
+         <p>Individuals requesting reproductions expressly assume the responsibility for
+				compliance with all pertinent provisions of the Copyright Act, 17 U.S.C. ss101 et
+				seq. Patrons further agree to indemnify and hold harmless the Marist College
+				Archives &amp; Special Collections and its staff in connection with any disputes
+				arising from the Copyright Act, over the reproduction of material at the request of
+				patrons. For more information please visit the following website:
+				http://www.loc.gov/copyright/title17/.</p>
+      </useConditions>
+      <scopeContent>
+			<!-- Optional EAD3 element, added to comply with DACS requirement for 'Scope and Content Element' -->
+         <p>The Lowell Thomas Papers encompasses a wide range of materials documenting the life,
+				family, and professional career of Lowell Thomas. These materials include
+				correspondence, administrative and financial documents, manuscripts, printed
+				materials, photographic materials, motion picture films, audio recordings, and
+				memorabilia.</p>
+      </scopeContent>
+      <biogHist>
+			<!-- Optional EAD3 element, added to comply with DACS single-level optimum requirement for 'Administrative/Biographical History Element' -->
+         <p>Lowell Jackson Thomas was born in Woodington, Ohio on 6 April 1892 to two school
+				teachers, Harry G. Thomas and Harriet Wagner Thomas. The family did not remain in
+				Darke County, Ohio for very long because Lowell's father wanted to become a doctor.
+				Harry G. Thomas's pursuit of a medical degree led the family to Kirkman, Iowa where
+				five-year-old Lowell was enrolled in school for the first time. Harry's studies soon
+				led him to the University of Nebraska. Upon graduation, Harry G. Thomas followed his
+				brother's suggestion to begin his medical practice in the twin mining boom towns of
+				Cripple Creek and Victor, Colorado. It was here in the rugged American West that
+				Lowell spent the better part of his childhood and young adult years.</p>
+      </biogHist>
+      <subjectHeadings>
+			<!-- Optional EAD3 element, added to comply with DACS single-level optimum requirement for 'Access points' -->
+         <subject localType="persname">
+            <term migration:localTermType="Thomas">Thomas</term>
+            <term migration:localTermType="Lowell">Lowell</term>
+            <term migration:localTermType="1892-1981">1892-1981</term>
+            <relationType>Creator</relationType>
+         </subject>
+         <subject localType="subject">
+            <term>Journalism</term>
+            <term>United States</term>
+         </subject>
+         <subject localType="subject">
+            <term>World War, 1939-1945</term>
+         </subject>
+         <subject localType="subject">
+            <term>World War, 1914-1918</term>
+            <term>Campaigns</term>
+            <term>Middle East</term>
+         </subject>
+      </subjectHeadings>
+      <descriptionOfComponents>
+         <c01>
+            <identificationData>
+               <unitId>MA-1-01</unitId>
+               <unitTitle>Textual materials</unitTitle>
+               <unitDateStructured unitDateType="inclusive">
+                  <dateSet>
+                     <dateRange>
+                        <fromDate standardDate="1789">1789</fromDate>
+                        <toDate standardDate="1984">1984</toDate>
+                     </dateRange>
+                     <date standardDate="1996">1996</date>
+                  </dateSet>
+               </unitDateStructured>
+            </identificationData>
+            <formsAvailable>
+               <formAvailable>
+                  <p>Also available on microfilm</p>
+               </formAvailable>
+            </formsAvailable>
+            <c02>
+               <identificationData>
+                  <unitTitle>Correspondence, writings, and other material</unitTitle>
+                  <unitId>MA-1-01-01</unitId>
+                  <unitDateStructured unitDateType="inclusive">
+                     <dateRange>
+                        <fromDate standardDate="1789">1789</fromDate>
+                        <toDate standardDate="1984">1984</toDate>
+                     </dateRange>
+                  </unitDateStructured>
+                  <container localType="box">1-5</container>
+               </identificationData>
+               <scopeContent>
+                  <p>These files contain correspondence between Thomas family members;
+							published and manuscript writings by Lowell Thomas, including
+							autobiographical content, articles, speeches, and travelogues; and
+							topically-arranged collections of journal articles, newspaper clippings,
+							and ephemera.</p>
+               </scopeContent>
+            </c02>
+            <c02>
+               <identificationData>
+                  <unitTitle>American Expeditionary Forces (A.E.F.)</unitTitle>
+                  <unitId>MA-1-01-02</unitId>
+                  <unitDateStructured unitDateType="inclusive">
+                     <dateRange>
+                        <fromDate standardDate="1918">1918</fromDate>
+                        <toDate standardDate="1919">1919</toDate>
+                     </dateRange>
+                  </unitDateStructured>
+                  <container localType="box">495</container>
+               </identificationData>
+               <formsAvailable>
+                  <formAvailable/>
+               </formsAvailable>
+            </c02>
+            <c02>
+               <identificationData>
+                  <unitTitle>General Edmund Allenby</unitTitle>
+                  <unitId>MA-1-01-03</unitId>
+                  <unitDateStructured unitDateType="inclusive">
+                     <date standardDate="1918">1918</date>
+                  </unitDateStructured>
+                  <container localType="box">495</container>
+               </identificationData>
+               <formsAvailable>
+                  <formAvailable/>
+               </formsAvailable>
+            </c02>
+         </c01>
+         <c01 level="series">
+            <identificationData>
+               <unitId>MA-1-02</unitId>
+               <unitTitle>Graphic materials</unitTitle>
+               <unitDateStructured unitDateType="inclusive">
+                  <dateRange>
+                     <fromDate standardDate="1891">1891</fromDate>
+                     <toDate standardDate="1980">1980</toDate>
+                  </dateRange>
+               </unitDateStructured>
+               <container localType="box">6</container>
+            </identificationData>
+            <scopeContent>
+               <p>Comprises photographs, lantern slides, and glass plate negatives accumulated
+						by Frank R. Roberson and Lowell Thomas arranged by topic and geographic
+						coverage. Also includes commercial photographs from Beseler Lantern Slide
+						Co., Inc., Curtis and Miller, T.H. McAllister Co., J. Horace McFarland Co.,
+						and other firms.</p>
+            </scopeContent>
+            <subjectHeadings>
+               <subject localType="persname">
+                  <term>Dalai Lama XIV</term>
+                  <term>1935-</term>
+               </subject>
+               <subject localType="persname">
+                  <term>Lawrence, T.E. (Thomas Edward)</term>
+                  <term>1888-1935</term>
+               </subject>
+            </subjectHeadings>
+         </c01>
+      </descriptionOfComponents>
+   </archDesc>
+</ead>
